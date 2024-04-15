@@ -1,6 +1,5 @@
 from gdo.base.GDO_Module import GDO_Module
-from gdo.core.Connector import Connector
-from gdo.irc.connector.IRC import IRC
+from gdo.session.GDO_Session import GDO_Session
 
 
 class module_session(GDO_Module):
@@ -10,4 +9,5 @@ class module_session(GDO_Module):
 
     def gdo_classes(self):
         return [
+            GDO_Session,
         ]
